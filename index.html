@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Octet – Ordinateurs, écrans et matériel informatique</title>
+  <meta name="description" content="Ordinateurs portables et fixes, écrans, stockage, réseau et accessoires. Prix en FCFA, garantie 12 mois, devis rapide sur WhatsApp.">
+  <meta name="theme-color" content="#2540D9">
+  <meta property="og:title" content="Octet – Ordinateurs, écrans et matériel informatique">
+  <meta property="og:description" content="Fiches claires, prix affichés et devis rapide sur WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- Icônes (sprite SVG) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-laptop" viewBox="0 0 24 24"><path d="M5 6h14v10H5z"/><path d="M2.5 19h19"/></symbol>
+    <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="1"/><path d="M10 7h4M12 17h.01"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M9 20h6M12 16v4"/></symbol>
+    <symbol id="i-drive" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 12h6M17 12h.01"/></symbol>
+    <symbol id="i-router" viewBox="0 0 24 24"><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 17h.01M11 17h.01M8.5 11a5 5 0 0 1 7 0M5.5 8.5a9 9 0 0 1 13 0"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html" aria-label="Octet, retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true"></span>Octet
+      </a>
+      <nav id="site-nav" class="nav" aria-label="Navigation principale">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#services">Services</a>
+        <a href="#commander">Commander</a>
+        <a href="#faq">Questions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="bar-actions">
+        <button class="btn btn-cart" id="open-cart" type="button" aria-haspopup="dialog">
+          <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+          <span>Ma sélection</span>
+          <span class="count-pill" id="cart-count">0</span>
+        </button>
+        <button class="btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+          <span class="sr">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Équipez votre bureau, votre campus ou votre setup</h1>
+          <p class="lead">Ordinateurs portables et fixes, écrans, stockage et réseau. Des fiches claires, des prix affichés et une réponse rapide sur WhatsApp.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#catalogue">Voir le catalogue</a>
+            <a class="btn" href="#commander">Comment commander</a>
+          </div>
+        </div>
+
+        <article class="sheet" aria-labelledby="sheet-title">
+          <header class="sheet-head">
+            <p class="sheet-label">Sélection du moment</p>
+            <h2 id="sheet-title">Portable création, 16 pouces</h2>
+          </header>
+          <dl class="sheet-rows">
+            <div><dt>Processeur</dt><dd>Core i7</dd></div>
+            <div><dt>Mémoire</dt><dd>32 Go</dd></div>
+            <div><dt>Stockage</dt><dd>SSD 1 To</dd></div>
+            <div><dt>Graphique</dt><dd>RTX 4050</dd></div>
+            <div><dt>Écran</dt><dd>16 pouces, 2K</dd></div>
+            <div><dt>Garantie</dt><dd>12 mois</dd></div>
+          </dl>
+          <footer class="sheet-foot">
+            <p class="price">1&nbsp;150&nbsp;000 FCFA</p>
+            <a class="btn" href="#catalogue">Voir le catalogue</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="catalogue" aria-labelledby="catalogue-title">
+      <div class="container">
+        <h2 id="catalogue-title">Catalogue</h2>
+        <p class="section-intro">Prix indicatifs en FCFA. Votre sélection part sur WhatsApp pour confirmer le stock et le prix.</p>
+
+        <div class="filters">
+          <div class="field">
+            <label for="q">Rechercher</label>
+            <input id="q" type="search" placeholder="Ex. SSD, 27 pouces, Wi-Fi 6" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="usage">Usage</label>
+            <select id="usage">
+              <option value="all">Tous les usages</option>
+              <option value="bureautique">Bureautique</option>
+              <option value="etudes">Études</option>
+              <option value="gaming">Jeu vidéo</option>
+              <option value="creation">Création</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sort">Trier par</label>
+            <select id="sort">
+              <option value="default">Sélection du magasin</option>
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix décroissant</option>
+              <option value="name">Nom</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="chips" id="chips" role="group" aria-label="Catégories"></div>
+        <p class="result-count" id="count" role="status"></p>
+        <ul class="grid" id="grid"></ul>
+        <noscript><p class="notice">Le catalogue nécessite JavaScript. Écrivez-nous sur WhatsApp pour recevoir la liste des produits.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container split">
+        <h2 id="services-title">Inclus avec chaque achat</h2>
+        <dl class="facts">
+          <div><dt>Garantie 12 mois</dt><dd>Réparation ou échange en cas de défaut de fabrication.</dd></div>
+          <div><dt>Installation offerte</dt><dd>Windows, pilotes et logiciels de base prêts à l'emploi.</dd></div>
+          <div><dt>Retrait ou livraison</dt><dd>Retrait en boutique, ou livraison dont le tarif est confirmé avec le devis.</dd></div>
+          <div><dt>Facture détaillée</dt><dd>Numéros de série et durée de garantie indiqués sur chaque facture.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="commander" aria-labelledby="commander-title">
+      <div class="container split">
+        <h2 id="commander-title">Comment commander</h2>
+        <ol class="steps">
+          <li><strong>Choisissez vos produits.</strong> Ajoutez-les à Ma sélection depuis le catalogue.</li>
+          <li><strong>Envoyez la liste.</strong> Un bouton prépare le message WhatsApp, rien à recopier.</li>
+          <li><strong>Confirmez et récupérez.</strong> Nous vérifions le stock et le prix, puis vous passez en boutique ou nous livrons.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <div class="container split">
+        <h2 id="faq-title">Questions fréquentes</h2>
+        <div class="faq">
+          <details>
+            <summary>Les prix sont-ils définitifs ?</summary>
+            <p>Non, ils sont indicatifs. Le prix final et la disponibilité sont confirmés dans le devis que nous vous envoyons.</p>
+          </details>
+          <details>
+            <summary>Puis-je payer sur le site ?</summary>
+            <p>Non. Ce site est une vitrine : le paiement se fait à la confirmation de commande, selon les moyens indiqués dans le devis.</p>
+          </details>
+          <details>
+            <summary>Que couvre la garantie ?</summary>
+            <p>Les défauts de fabrication pendant 12 mois. Les dommages liés à une chute, un liquide ou une mauvaise utilisation ne sont pas couverts.</p>
+          </details>
+          <details>
+            <summary>Livrez-vous ?</summary>
+            <p>Oui, selon votre zone. Le tarif de livraison est indiqué dans le devis, et le retrait en boutique reste gratuit.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container split">
+        <h2 id="contact-title">Nous contacter</h2>
+        <div>
+          <dl class="contact-list">
+            <div><dt>WhatsApp</dt><dd><a id="wa-link" href="https://wa.me/237678895109">Écrire sur WhatsApp</a></dd></div>
+            <div><dt>E-mail</dt><dd><a href="mailto:feudjiohoukeng@gmail.com">feudjiohoukeng@gmail.com</a></dd></div>
+            <div><dt>Adresse</dt><dd>NDOGPASSI, DOUALA</dd></div>
+            <div><dt>Horaires</dt><dd>Du lundi au samedi, de 8 h à 18 h</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-bar">
+      <p>© <span id="year">2026</span> Octet. Tous droits réservés.</p>
+      <a href="mentions-legales.html">Mentions légales et données personnelles</a>
+    </div>
+  </footer>
+
+  <!-- Panneau « Ma sélection » -->
+  <dialog class="cart" id="cart" aria-labelledby="cart-title">
+    <div class="cart-head">
+      <h2 id="cart-title">Ma sélection</h2>
+      <button class="btn btn-icon" id="close-cart" type="button">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        <span class="sr">Fermer la sélection</span>
+      </button>
+    </div>
+    <p class="cart-empty" id="cart-empty">Votre sélection est vide. Ajoutez des produits depuis le catalogue.</p>
+    <ul class="cart-list" id="cart-list"></ul>
+    <div class="cart-foot" id="cart-foot">
+      <p class="cart-total"><span>Total indicatif</span> <strong id="cart-total">0 FCFA</strong></p>
+      <a class="btn btn-primary" id="send" href="#" target="_blank" rel="noopener">Envoyer ma sélection sur WhatsApp</a>
+      <button class="btn" id="clear-cart" type="button">Vider la sélection</button>
+    </div>
+  </dialog>
+
+  <p class="sr" id="announce" role="status"></p>
+</body>
+</html>
